@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <title>youxi</title>
+</head>
+<body>
+  <script>
+    window.onload = function (){
+      function makePhrases() {
+        var name = ['陈泽宇','杨克琴','郭懿婷','陈欣楚','杨心怡','吴倩雯','龚佳怡','李可新','陆心怡',
+        '张璐','潘梦情','田金丰','葛梦蝶','刘祎婷','沈宇峰','王达','李一鸣','徐志豪','孙睿褀','徐杨',
+        '濮徐杰','陈卓豪','王昱','林超凡','孔易飞','王诚礼','杨凤旗','王韫韬','吴策','顾强','顾强','薛宇成',
+        '俞浩','陈李鹏','徐超','顾伟豪','王钦鹏','孙权','潘铖','朱铭杨','张程','杨吉']
+        var time = ['七点半','八点','八点半','十二点','三点','半夜']
+        var site = ['在宿舍','在教室','在机房','在食堂','在操场','在商城','在家']
+        var activity = ['吃饭','散步','玩游戏','上课','打篮球','看电视']
+
+        // var rand1 = chooseRandStrInArray(name)
+        // var rand2 = chooseRandStrInArray(time)
+        // var rand3 = chooseRandStrInArray(site)
+        // var rand4 = chooseRandStrInArray(activity)
+
+        var phrase = chooseRandStrInArray(name) + "" + chooseRandStrInArray(time) + "" + chooseRandStrInArray(site) + "" + chooseRandStrInArray(activity);
+        document.write(phrase);
+
+        function chooseRandStrInArray(array){
+          return array[Math.floor(Math.random() * array.length)]
+        }
+
+        // chooseRandStrInArray(time)
+      }
+
+      makePhrases();
+  }
+
+  </script>
+</body>
+</html>
